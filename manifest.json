@@ -1,0 +1,26 @@
+{
+    "name": "Civ 6 Fandom Styler",
+    "version": "0.0.1",
+    "description": "Styles the page to be more readable",
+    "manifest_version": 2,
+	"permissions": [
+      "activeTab"
+    ],
+	"icons": {
+		"16": "images/icon.png",
+		"32": "images/icon.png",
+		"48": "images/icon.png",
+		"128": "images/icon.png"
+	},
+	"content_scripts":[
+		{
+			"css": ["css/main.css"],
+			"matches": ["https://civilization.fandom.com/*"]
+		},
+		{
+			"js": ["js/lib/jquery3.4.1.min.js","js/civilizations.js"],
+			"css": ["css/civilizations.css"],
+			"matches": ["https://civilization.fandom.com/wiki/Civilizations_(Civ6)"]
+		}
+	]
+  }

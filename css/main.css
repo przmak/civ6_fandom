@@ -1,0 +1,13 @@
+#WikiaRailWrapper, #WikiaFooter{
+	display:none!important;
+}
+#WikiaMainContent{
+	width:100%!important;
+}
+#WikiaPage{
+	width: 98%;
+	padding: 0px 18px;
+}
+header{
+	width: 100%!important;	
+}
